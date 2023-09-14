@@ -1,24 +1,33 @@
 """
-Here is a code that I created to generate fictitious data to be used in Tableau to create a dashboard to be published on Tableau Public. 
+I have developed a code that generates synthetic data specifically designed for Tableau, enabling the creation of a dashboard intended for publication on Tableau Public.
 
-The reason I generated this data is to allow for flexibility in the columns to use and also because I did not easily find such data on the internet.
+The motivation behind crafting this data was twofold. Firstly, it offers flexibility in selecting the columns to utilize, and secondly, it addresses the challenge of locating similar data readily available on the internet.
 
-The code allows for simulating a set of fictitious data that is quite close to real life by integrating random factors through mathematical laws. 
+This code is adept at simulating fictitious data that closely resembles real-life scenarios, thanks to its integration of random variables based on mathematical principles. The code's key steps can be summarized as follows:
 
-Here is a summary of the different steps in the code:
+1. **Initialization:** This phase involves creating lists for salespeople, managers, stores, regions, and other essential variables.
 
-1. Initialization: creation of lists of salespeople, managers, stores, regions, and other necessary variables.
-2. Assignment: assigning salespeople to managers, stores, and regions.
-3. Account association: assigning accounts to salespeople.
-4. Determination and adjustment of the number of opportunities: using a Poisson distribution and adjustment to reach approximately 1000 opportunities.
-5. Opportunity generation: creating opportunities for each account based on predefined weights.
-6. Calculation of the actual price: applying a variation factor and the probability of success.
-7. Creation and verification of a DataFrame: integrating the generated data and ensuring coherence.
-8. Growth factors and seasonality: definition and application of annual growth factors and seasonality.
-9. Monthly goals: generating monthly goals for each salesperson.
-10. Creation of a DataFrame for goals: integration of monthly goals.
-11. Export and download of DataFrames: writing the "opportunities" and "goals" DataFrames to an Excel file and retrieving the file.
-"""
+2. **Assignment:** Salespeople are assigned to managers, stores, and regions as part of this step.
+
+3. **Account Association:** Accounts are linked to salespeople, facilitating a comprehensive data representation.
+
+4. **Determination and Adjustment of Opportunities:** Leveraging a Poisson distribution and fine-tuning to approach the target of around 1000 opportunities.
+
+5. **Opportunity Generation:** Opportunities are generated for each account, taking into account predefined weights.
+
+6. **Calculation of Actual Prices:** This step involves applying a variability factor and considering the likelihood of success.
+
+7. **DataFrame Creation and Verification:** The generated data is integrated into a DataFrame while ensuring data consistency and coherence.
+
+8. **Incorporating Growth Factors and Seasonality:** The code defines and applies annual growth factors and seasonality patterns.
+
+9. **Monthly Goals:** It generates monthly targets for each salesperson, facilitating performance tracking.
+
+10. **DataFrame for Goals:** This phase involves the integration of monthly goals into a separate DataFrame.
+
+11. **Export and Download of DataFrames:** Finally, the code writes the "opportunities" and "goals" DataFrames to an Excel file and retrieves the resulting file.
+
+This comprehensive code streamlines the process of generating synthetic data tailored for Tableau, ensuring that the subsequent dashboard creation and publication on Tableau Public are efficient and effective."""
 
 import random
 import pandas as pd
